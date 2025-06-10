@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      body {
+        background-color: #333;
+        color: whitesmoke;
+        line-height: 1.6;
+      }
+
+      form {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #444;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.39);
+      }
+
+      input {
+        padding: 4px;
+      }
+
+      button {
+        padding: 0.6rem;
+        background-color: #28a745;
+        border-radius: 0.25rem;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #top {
+        padding-top: 1rem;
+        font-weight: bold;
+      }
+
+      h2 {
+        text-align: center;
+        color: whitesmoke;
+        font-size: 24px;
+      }
+    </style>
+    <title>Formulários em HTML</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h2>Cadastro de Usuário</h2>
+        <label id="top">Nome Completo: </label>
+        <input type="text" placeholder="Digite seu nome completo" />
+        <br />
+        <br />
+        <label id="top">E-mail: </label>
+        <input type="email" placeholder="Digite seu email" />
+        <br />
+        <br />
+        <label id="top">Senha: </label>
+        <input type="password" placeholder="Digite sua senha" />
+        <br />
+        <br />
+        <label id="top">Gênero: </label>
+        <label for="male">
+          <input type="radio" name="gender" value="male" /> Masculino</label
+        >
+        <label for="female">
+          <input type="radio" name="gender" value="female" /> Feminino</label
+        >
+        <label for="other">
+          <input type="radio" name="gender" value="other" /> Outro</label
+        >
+        <br /><br />
+        <label for="terms">
+          <input type="checkbox" name="terms" required /> Aceito os termos de
+          condição
+        </label>
+        <br /><br />
+        <label for="city" id="top">Cidade:</label>
+        <select name="city">
+          <option value="rs">Jaguarão</option>
+          <option value="rs">Esteio</option>
+          <option value="rs">Campo Bom</option>
+          <option value="mg">Belo Horizonte</option>
+          <option value="mg">Lagoa Santa</option>
+        </select>
+        <br /><br />
+        <label for="message" id="top">Mensagem</label>
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Deixe sua mensagem"
+        ></textarea>
+        <br /><br />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>
